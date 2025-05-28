@@ -1,0 +1,35 @@
+# Python specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+dist/
+build/
+*.whl
+
+# IDE and OS specific ignores
+.vscode/           # VS Code specific settings (you might want to include some of these, but generally ignore)
+.idea/             # IntelliJ / PyCharm
+.DS_Store          # macOS specific
+Thumbs.db          # Windows specific
+
+# Streamlit specific ignores
+.streamlit/local_configs.toml # Local Streamlit configs that shouldn't be shared
+
+# Data and Database files
+data/*.csv          # Ignore CSVs in the data folder if they are large and for local use only
+*.db                # Ignore SQLite database files if they contain user data or are large
+*.sqlite3
+*.sqlite
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
